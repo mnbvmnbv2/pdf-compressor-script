@@ -19,9 +19,9 @@ Install Ghostscript on your system. The installation process varies by system:
 ## Usage
 To compress all PDFs in a directory, navigate to the directory containing the Python script in your terminal or command prompt, then run:
 
-`python pdf_compress.py *path*`
+`python pdf_compress.py *path* *logpath*`
 
-Replace `*path*` with the path to the directory that contains the PDFs you want to compress. The script will recursively search the specified directory and all its subdirectories for PDF files to compress.
+Replace `*path*` with the path to the directory that contains the PDFs you want to compress. Replace `*logpath*` with a path to a txt file for keeping track of which files is compressed so you can continue later. The script will recursively search the specified directory and all its subdirectories for PDF files to compress.
 
 For each PDF, the script will print a message indicating whether the file was compressed or skipped, and if compressed, the percentage by which the file size was reduced.
 
@@ -31,3 +31,5 @@ If you encounter an error message like "gs not found", it means Ghostscript is n
 ## Credits/Disclaimer
 This code was made almost exclusively with ChatGPT.
 
+## Results
+I used this on a folder with about **14GB** of random pdfs (about 15000, everything from just text to just pictures, mostly academic lectures or other academic pdfs) and it got compressed to **6.5GB**.
