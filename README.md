@@ -1,6 +1,8 @@
 # PDF Compressor
 This is a Python script that compresses all PDF files in a specified directory and its subdirectories using Ghostscript. The script replaces each original PDF with its compressed version if the compressed file is smaller. The script will skip and not compress PDF files that would increase in size after compression. It does not compress the files a lot (like some other programs and 3rd party apps), but you could get significant savings if you have a lot of pdfs.
 
+**Warning:** There is no guarantee that the compressed files will not be corrupt or missing parts like pictures, however it seems to be unlikely in my limited testing.
+
 ## Requirements
 - Python 3
 - Ghostscript
